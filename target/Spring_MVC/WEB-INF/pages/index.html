@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KATA PP-2.2.2</title>
+</head>
+<body>
+<div>
+    <th:block th:each="msg : ${messages}">
+        <h1 th:text="${msg}"></h1>
+    </th:block>
+    <button onclick="window.location.href='cars'">/cars (автоматический вывод)</button>
+    <button onclick="window.location.href='cars'">ручной ввод (пробная кнопка)</button>
+</div>
+</body>
+</html>
